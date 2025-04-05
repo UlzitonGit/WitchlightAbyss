@@ -223,6 +223,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8fd9b2d1319f9f3419f8fbf2a578316d, type: 3}
+    - target: {fileID: 1690081463189227257, guid: 7f838d75d6ba0c24c929666a3c1fd860, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+    - target: {fileID: 1690081463189227257, guid: 7f838d75d6ba0c24c929666a3c1fd860, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+    - target: {fileID: 1690081463189227257, guid: 7f838d75d6ba0c24c929666a3c1fd860, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2040861289470396781, guid: 7f838d75d6ba0c24c929666a3c1fd860, type: 3}
       propertyPath: m_Name
       value: menu
