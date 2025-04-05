@@ -4,10 +4,12 @@ using UnityEngine.InputSystem;
 public class ShowBabl : MonoBehaviour
 {
     [SerializeField] private GameObject bablCanvas;
+    private InventoryMananger _inventoryMananger;
     private bool isPlayerInTrigger = false;
 
     void Start()
     {
+        _inventoryMananger = FindAnyObjectByType<InventoryMananger>();
         bablCanvas.SetActive(false);
     }
 
@@ -23,12 +25,14 @@ public class ShowBabl : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            _inventoryMananger.InInteractiveZone = true;
             isPlayerInTrigger = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        _inventoryMananger.InInteractiveZone = false;
         isPlayerInTrigger = false;
         bablCanvas.SetActive(false);
     }

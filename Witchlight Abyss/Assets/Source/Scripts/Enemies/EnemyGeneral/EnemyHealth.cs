@@ -4,6 +4,8 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private float _health = 100;
     [SerializeField] private GameObject _mana;
+    [SerializeField] private GameObject _heal;
+    [SerializeField] private float _dropChance = 35;
     public virtual void GetDamage(float damage)
     {
       
@@ -14,7 +16,10 @@ public class EnemyHealth : MonoBehaviour
             {
                 Instantiate(_mana, transform.position + new Vector3(Random.Range(0.2f, 2f), Random.Range(0.2f, 2f), Random.Range(0.2f, 2f)), Quaternion.identity);
             }
-            
+            if(_dropChance >= Random.Range(0, 100))
+            {
+                Instantiate(_heal, transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
         }
     }
