@@ -352,6 +352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _flipPart: {fileID: 1567362037718750500}
   animator: {fileID: 7696244951808500790}
+  _dashPower: 0
 --- !u!61 &1363497977414829545
 BoxCollider2D:
   m_ObjectHideFlags: 0
