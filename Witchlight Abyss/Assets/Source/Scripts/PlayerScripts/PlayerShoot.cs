@@ -10,7 +10,7 @@ public class PlayerShoot : MonoBehaviour
     private Camera _camera;
     private ManaMananger _manaMananger;
     private bool _canShoot = true;
-    private int _manaCost = 3;
+    private int _manaCost = 2;
     private void Start()
     {
         _manaMananger = GetComponent<ManaMananger>();

@@ -250,6 +250,7 @@ GameObject:
   - component: {fileID: 4490610624755261036}
   - component: {fileID: 7469099804139732515}
   - component: {fileID: 6450822408611859247}
+  - component: {fileID: 7876672435913896392}
   m_Layer: 0
   m_Name: Sign
   m_TagString: Untagged
@@ -316,7 +317,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -2249407156180571899, guid: 5b6189b4673c46c42a45b36a96027b69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -387,6 +388,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bablCanvas: {fileID: 2709394914276329447}
+--- !u!114 &7876672435913896392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4370257287663969360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 4
+  m_ComponentVersion: 5
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000
+  m_ShapePath:
+  - {x: -0.094756596, y: -0.9205246, z: 0}
+  - {x: -0.07649603, y: -0.6527083, z: 0}
+  - {x: 0.09110324, y: -0.6564276, z: 0}
+  - {x: 0.098408565, y: -0.90936685, z: 0}
+  m_ShapePathHash: -438365933
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 0}
+  m_ShadowShape2DProvider:
+    rid: -2
+  m_ShadowCastingSource: 1
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: 0.0018259808, y: -0.78661644, z: 0}
+      m_Extent: {x: 0.09658258, y: 0.13390815, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0.08
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0.08
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 1
+  m_PreviousShadowShape2DSource: {fileID: 4490610624755261036}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &5634972836879546644
 GameObject:
   m_ObjectHideFlags: 0
