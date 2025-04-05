@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 100
+  _mana: {fileID: 965470985707234394, guid: 40434e78b8916e7449fd947867038e57, type: 3}
 --- !u!195 &4136193870870937435
 NavMeshAgent:
   m_ObjectHideFlags: 0

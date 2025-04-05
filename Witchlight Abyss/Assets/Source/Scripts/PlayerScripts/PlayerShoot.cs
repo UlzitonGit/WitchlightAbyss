@@ -8,9 +8,12 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private float _timeBetweenShoots;
     private Camera _camera;
+    private ManaMananger _manaMananger;
     private bool _canShoot = true;
+    private int _manaCost = 3;
     private void Start()
     {
+        _manaMananger = GetComponent<ManaMananger>();
         _camera = FindAnyObjectByType<Camera>();
     }
     void Update()
@@ -18,7 +21,7 @@ public class PlayerShoot : MonoBehaviour
         Vector3 difference = _camera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotateZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotateZ + _offset);
-        if (Input.GetKey(KeyCode.Mouse0) && _canShoot)
+        if (Input.GetKey(KeyCode.Mouse1) && _canShoot && _manaMananger.Mana > 0)
         {
             Shoot();
         }
@@ -26,6 +29,7 @@ public class PlayerShoot : MonoBehaviour
     private void Shoot()
     {
         StartCoroutine(Reload());
+        _manaMananger.MinusMana(_manaCost);
         _animator.SetTrigger("Shoot");
         Instantiate(_bullet, transform.position, transform.rotation);
     }
