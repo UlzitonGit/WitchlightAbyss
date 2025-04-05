@@ -20,4 +20,13 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
+    public void GetHealth(float health)
+    {
+        _hp += health;
+        if (_hp >= _maxHealth)
+        {
+            _hp = _maxHealth;
+        }
+        _hpBar.fillAmount = _hp / _maxHealth;
+    }
 }
