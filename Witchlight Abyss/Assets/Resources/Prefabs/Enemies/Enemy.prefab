@@ -275,6 +275,8 @@ MonoBehaviour:
   _agent: {fileID: 4136193870870937435}
   _attackDistance: 1.5
   _reloadTime: 2
+  _spriteRenderer: {fileID: 1469457968114636431}
+  IsActive: 0
   _damage: 10
   _anim: {fileID: 233714474194335022}
 --- !u!114 &141334871986491864
@@ -293,6 +295,7 @@ MonoBehaviour:
   _mana: {fileID: 965470985707234394, guid: 40434e78b8916e7449fd947867038e57, type: 3}
   _heal: {fileID: 2436748472610905684, guid: 11bde0b6e0a04f4418413525666aea11, type: 3}
   _dropChance: 35
+  _anim: {fileID: 233714474194335022}
 --- !u!195 &4136193870870937435
 NavMeshAgent:
   m_ObjectHideFlags: 0
