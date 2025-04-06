@@ -274,7 +274,7 @@ MonoBehaviour:
   _rageDistance: 10
   _agent: {fileID: 4136193870870937435}
   _attackDistance: 1.5
-  _reloadTime: 0.6
+  _reloadTime: 2
   _damage: 10
   _anim: {fileID: 233714474194335022}
 --- !u!114 &141334871986491864

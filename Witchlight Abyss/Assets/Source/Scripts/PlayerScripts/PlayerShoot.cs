@@ -11,6 +11,7 @@ public class PlayerShoot : MonoBehaviour
     private ManaMananger _manaMananger;
     private bool _canShoot = true;
     private int _manaCost = 10;
+    public bool IsActive = true;
     private void Start()
     {
         _manaMananger = GetComponent<ManaMananger>();
@@ -18,6 +19,7 @@ public class PlayerShoot : MonoBehaviour
     }
     void Update()
     {
+        if (!IsActive) return;
         Vector3 difference = _camera.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotateZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotateZ + _offset);
