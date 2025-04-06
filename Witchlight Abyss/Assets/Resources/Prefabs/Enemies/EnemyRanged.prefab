@@ -116,15 +116,15 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   m_ShapePathHash: 0
   m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 4355461301129655853}
+  m_ShadowShape2DComponent: {fileID: 0}
   m_ShadowShape2DProvider:
-    rid: 3115185907606225165
-  m_ShadowCastingSource: 2
+    rid: -2
+  m_ShadowCastingSource: 1
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.44999695, y: 0.44999695, z: 0}
+      m_Extent: {x: 0.5, y: 0.5, z: 0}
     m_EdgeProcessing: 1
     m_TrimEdge: 0.05
     m_FlipX: 0
@@ -133,14 +133,13 @@ MonoBehaviour:
   m_CastingOption: 1
   m_PreviousTrimEdge: 0.05
   m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowCastingSource: 1
   m_PreviousShadowShape2DSource: {fileID: 4355461301129655853}
   references:
     version: 2
     RefIds:
-    - rid: 3115185907606225165
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &252740442563730207
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,9 +235,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31915cfd8c6e7dc498ba23299d29679a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 50
-  _mana: {fileID: 965470985707234394, guid: 40434e78b8916e7449fd947867038e57, type: 3}
-  _heal: {fileID: 2436748472610905684, guid: 11bde0b6e0a04f4418413525666aea11, type: 3}
+  _health: 200
+  _mana: {fileID: 965470985707234394, guid: 9d1bf11fc6daec34091f2937b69e3753, type: 3}
+  _heal: {fileID: 2436748472610905684, guid: f209ad4a64b02c84b90a67ccb98c0466, type: 3}
   _dropChance: 35
 --- !u!114 &2795365846740990280
 MonoBehaviour:
@@ -252,11 +251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b5fabeca319dee4eb39447efe17c3f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _rageDistance: 0
+  _rageDistance: 15
   _agent: {fileID: 7751241986532768468}
-  _attackDistance: 0
-  _reloadTime: 0
+  _attackDistance: 10
+  _reloadTime: 0.5
   _enemyBullet: {fileID: 4332268352718286444, guid: ae8758afa0de54a45b160c86c0ef15a7, type: 3}
   _spp: {fileID: 415213852474211720}
 --- !u!195 &7751241986532768468

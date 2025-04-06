@@ -3,7 +3,7 @@ using UnityEngine;
 public class ManaPoints : MonoBehaviour
 {
     private ManaMananger _manaMananger;
-    private int _plusMana = 3;
+    [SerializeField] private int _plusMana = 3;
     private float _magnetRange = 4;
     private float _flySpeed;
     private void Start()

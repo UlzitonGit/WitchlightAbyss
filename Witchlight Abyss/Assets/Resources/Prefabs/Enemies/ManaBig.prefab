@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2390494305619633257}
   - component: {fileID: 7781396961801093676}
   m_Layer: 0
-  m_Name: Mana
+  m_Name: ManaBig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04599acbc4ea85e498fca7ecee88a1a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _plusMana: 2
+  _plusMana: 6
 --- !u!1 &3626242809812772220
 GameObject:
   m_ObjectHideFlags: 0
