@@ -2,15 +2,22 @@ using UnityEngine;
 
 public class OverlappingObjects : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private SpriteRenderer _spriteRenderer;
     void Start()
     {
-        
+        gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.tag == "Player")
+        {
+            gameObject.GetComponent<SpriteRenderer>().sortingOrder = 10;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
     }
 }
