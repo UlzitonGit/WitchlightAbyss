@@ -5,17 +5,20 @@ using UnityEngine.AI;
 
 abstract public class EnemyBehaviour : MonoBehaviour
 {
-    [SerializeField] protected GameObject _player;
+    
     [SerializeField] protected float _rageDistance;
     [SerializeField] protected NavMeshAgent _agent;
     [SerializeField] protected float _attackDistance;
     [SerializeField] protected float _reloadTime;
+    protected GameObject _player;
     protected PlayerHealth _playerHealth;
     protected bool _isDead = false;
     protected bool _isRaged;
     protected bool _canAttack = true;
+    protected bool _inAttackRange = false;
     private void Start()
     {
+        _player = FindAnyObjectByType<PlayerHealth>().gameObject;
         _agent.updateRotation = false;
         _agent.updateUpAxis = false;
         _playerHealth = _player.GetComponent<PlayerHealth>();
@@ -28,8 +31,10 @@ abstract public class EnemyBehaviour : MonoBehaviour
             _agent.SetDestination(_player.transform.position);
             _isRaged = true;
         }
-        if(_isRaged && dist < _attackDistance && _canAttack)
+        _inAttackRange = dist < _attackDistance;
+        if(_inAttackRange && _canAttack)
         {
+            _inAttackRange=true;
             Attack();
         }
     }

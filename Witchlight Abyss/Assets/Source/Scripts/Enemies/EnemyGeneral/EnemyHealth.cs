@@ -12,7 +12,7 @@ public class EnemyHealth : MonoBehaviour
         _health -= damage;
         if(_health < 0)
         {
-            for (int i = 0; i < Random.Range(3, 6); i++)
+            for (int i = 0; i < Random.Range(9, 12); i++)
             {
                 Instantiate(_mana, transform.position + new Vector3(Random.Range(0.2f, 2f), Random.Range(0.2f, 2f), Random.Range(0.2f, 2f)), Quaternion.identity);
             }

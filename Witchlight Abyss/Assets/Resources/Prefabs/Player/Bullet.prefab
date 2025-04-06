@@ -9916,7 +9916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dir: {x: 20, y: 0, z: 0}
   _vfx: {fileID: 6793753098993432820}
-  _damage: 10
+  _damage: 60
 --- !u!1 &7037263809249311660
 GameObject:
   m_ObjectHideFlags: 0

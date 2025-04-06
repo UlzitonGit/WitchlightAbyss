@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4747674326244629989}
   - component: {fileID: 1469457968114636431}
   - component: {fileID: 5866476281077081189}
-  - component: {fileID: 233714474194335022}
-  - component: {fileID: 6247324137298339557}
+  - component: {fileID: 8294561397265925259}
+  - component: {fileID: 3664338547545060458}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.0312, y: 2.0312, z: 2.0312}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6145314591317874704}
@@ -142,7 +142,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
---- !u!95 &233714474194335022
+--- !u!95 &8294561397265925259
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -164,7 +164,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6247324137298339557
+--- !u!114 &3664338547545060458
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: 141334871986491864}
   - component: {fileID: 4136193870870937435}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: EnemyBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,7 +257,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.05, y: 2.05}
   m_EdgeRadius: 0
 --- !u!114 &7394733856952110552
 MonoBehaviour:
@@ -273,10 +273,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rageDistance: 10
   _agent: {fileID: 4136193870870937435}
-  _attackDistance: 1.5
-  _reloadTime: 0.6
-  _damage: 10
-  _anim: {fileID: 233714474194335022}
+  _attackDistance: 4
+  _reloadTime: 5
+  _damage: 60
+  _anim: {fileID: 8294561397265925259}
 --- !u!114 &141334871986491864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,10 +289,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31915cfd8c6e7dc498ba23299d29679a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
-  _mana: {fileID: 965470985707234394, guid: 40434e78b8916e7449fd947867038e57, type: 3}
-  _heal: {fileID: 2436748472610905684, guid: 11bde0b6e0a04f4418413525666aea11, type: 3}
-  _dropChance: 35
+  _health: 400
+  _mana: {fileID: 965470985707234394, guid: 6c8829e21aead6b42852bfb247ab7ceb, type: 3}
+  _heal: {fileID: 2436748472610905684, guid: 9966803f265833b4696a2089aec65242, type: 3}
+  _dropChance: 100
 --- !u!195 &4136193870870937435
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -302,8 +302,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 5785653211957277093}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
+  m_Radius: 1.04
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -311,7 +311,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0.52
+  m_Height: 2.14
+  m_BaseOffset: 1.09
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
