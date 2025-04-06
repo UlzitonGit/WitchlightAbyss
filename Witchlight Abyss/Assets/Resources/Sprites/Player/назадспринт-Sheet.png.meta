@@ -149,6 +149,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -385,7 +411,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u043D\u0430\u0437\u0430\u0434\u0441\u043F\u0440\u0438\u043D\u0442-Sheet_0": -7823980271188342232
+      "\u043D\u0430\u0437\u0430\u0434\u0441\u043F\u0440\u0438\u043D\u0442-Sheet_1": 5575534457834205234
+      "\u043D\u0430\u0437\u0430\u0434\u0441\u043F\u0440\u0438\u043D\u0442-Sheet_2": -2214035535560897880
+      "\u043D\u0430\u0437\u0430\u0434\u0441\u043F\u0440\u0438\u043D\u0442-Sheet_3": 8335750210406841559
+      "\u043D\u0430\u0437\u0430\u0434\u0441\u043F\u0440\u0438\u043D\u0442-Sheet_4": -7221855226744164469
+      "\u043D\u0430\u0437\u0430\u0434\u0441\u043F\u0440\u0438\u043D\u0442-Sheet_5": -8853629156162989294
+      "\u043D\u0430\u0437\u0430\u0434\u0441\u043F\u0440\u0438\u043D\u0442-Sheet_6": 209588705052166003
+      "\u043D\u0430\u0437\u0430\u0434\u0441\u043F\u0440\u0438\u043D\u0442-Sheet_7": -324255002315099944
+      "\u043D\u0430\u0437\u0430\u0434\u0441\u043F\u0440\u0438\u043D\u0442-Sheet_8": -6052729095228467917
+      "\u043D\u0430\u0437\u0430\u0434\u0441\u043F\u0440\u0438\u043D\u0442-Sheet_9": 1756040949924226853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
