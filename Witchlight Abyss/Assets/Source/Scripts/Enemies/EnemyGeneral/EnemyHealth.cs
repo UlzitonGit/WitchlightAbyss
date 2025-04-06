@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -6,11 +7,19 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private GameObject _mana;
     [SerializeField] private GameObject _heal;
     [SerializeField] private float _dropChance = 35;
+    [SerializeField] private Animator _anim;
+    private EnemyBehaviour _enemyBehaviour;
+    private bool _dead = false;
+    private void Start()
+    {
+        _enemyBehaviour = GetComponent<EnemyBehaviour>();
+    }
     public virtual void GetDamage(float damage)
     {
-      
+        if (_dead) return;
         _health -= damage;
-        if(_health < 0)
+        _anim.SetTrigger("GetDamage");
+        if (_health < 0)
         {
             for (int i = 0; i < Random.Range(9, 12); i++)
             {
@@ -20,7 +29,15 @@ public class EnemyHealth : MonoBehaviour
             {
                 Instantiate(_heal, transform.position, Quaternion.identity);
             }
-            Destroy(gameObject);
+            StartCoroutine(Death());
         }
+    }
+    IEnumerator Death()
+    {
+        _dead = true;
+        _enemyBehaviour.IsActive = false;
+        _anim.SetBool("Death", true);
+        yield return new WaitForSeconds(4);
+        Destroy(gameObject);
     }
 }
