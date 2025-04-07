@@ -1517,9 +1517,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a705897fa424c448d978276faaf1ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _moveSpeed: 3.5
   _flipPart: {fileID: 4756891939972498517}
   _animator: {fileID: 7696244951808500790}
   _dashPower: 10
+  _canWalk: 1
 --- !u!61 &1363497977414829545
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1607,6 +1609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hpBar: {fileID: 1498689138755336148}
   _hp: 100
+  _anim: {fileID: 7696244951808500790}
 --- !u!61 &7844000442830834423
 BoxCollider2D:
   m_ObjectHideFlags: 0

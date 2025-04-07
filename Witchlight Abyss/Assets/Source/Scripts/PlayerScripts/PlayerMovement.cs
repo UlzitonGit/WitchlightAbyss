@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
    
-    private float _moveSpeed = 3.5f;
+    public float _moveSpeed = 3.5f;
 
     private bool isFlipped = false;
     Rigidbody2D rb;
