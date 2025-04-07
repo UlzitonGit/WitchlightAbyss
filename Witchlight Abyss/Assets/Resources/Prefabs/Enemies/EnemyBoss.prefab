@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9056604, g: 0.16803128, b: 0.16803128, a: 1}
+  m_Sprite: {fileID: 395587713625289414, guid: 326718323516ace448b1ce88f1cb2cd4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -152,7 +152,7 @@ Animator:
   m_GameObject: {fileID: 2851299948681101973}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cceae5da27950544faef957f993f1d02, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9504e64df75d72443ba393fdc01d6a1e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -277,7 +277,7 @@ MonoBehaviour:
   _agent: {fileID: 4136193870870937435}
   _attackDistance: 4
   _reloadTime: 5
-  _spriteRenderer: {fileID: 0}
+  _spriteRenderer: {fileID: 1469457968114636431}
   IsActive: 1
   _damage: 60
 --- !u!114 &141334871986491864
@@ -296,7 +296,7 @@ MonoBehaviour:
   _mana: {fileID: 965470985707234394, guid: 6c8829e21aead6b42852bfb247ab7ceb, type: 3}
   _heal: {fileID: 2436748472610905684, guid: 9966803f265833b4696a2089aec65242, type: 3}
   _dropChance: 100
-  _anim: {fileID: 0}
+  _anim: {fileID: 8294561397265925259}
 --- !u!195 &4136193870870937435
 NavMeshAgent:
   m_ObjectHideFlags: 0
