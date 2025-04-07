@@ -18,6 +18,7 @@ abstract public class EnemyBehaviour : MonoBehaviour
     protected bool _canAttack = true;
     protected bool _inAttackRange = false;
     public bool IsActive = true;
+    
     private void Start()
     {
         IsActive = true;
@@ -55,4 +56,5 @@ abstract public class EnemyBehaviour : MonoBehaviour
         yield return new WaitForSeconds(_reloadTime);
         _canAttack = true;
     }
+  
 }
