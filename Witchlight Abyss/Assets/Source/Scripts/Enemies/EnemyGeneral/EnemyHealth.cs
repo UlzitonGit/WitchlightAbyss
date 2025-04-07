@@ -10,6 +10,8 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private Animator _anim;
     private EnemyBehaviour _enemyBehaviour;
     private bool _dead = false;
+    private RoomZone _roomZone;
+    private bool _isCounted = false;
     private void Start()
     {
         _enemyBehaviour = GetComponent<EnemyBehaviour>();
@@ -34,10 +36,20 @@ public class EnemyHealth : MonoBehaviour
     }
     IEnumerator Death()
     {
+        _roomZone._enemyCount -= 1;
         _dead = true;
         _enemyBehaviour.IsActive = false;
         _anim.SetBool("Death", true);
         yield return new WaitForSeconds(4);
         Destroy(gameObject);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("FightZone") && !_isCounted)
+        {
+            _roomZone = collision.GetComponent<RoomZone>();
+            _roomZone._enemyCount ++;
+            _isCounted = true;
+        }
     }
 }
