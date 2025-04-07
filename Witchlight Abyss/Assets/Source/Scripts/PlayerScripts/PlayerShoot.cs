@@ -7,6 +7,9 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private GameObject _bullet;
     [SerializeField] private Animator _animator;
     [SerializeField] private float _timeBetweenShoots;
+    [SerializeField] private AudioSource _source;
+    [SerializeField] private AudioClip _shootSfx;
+    [SerializeField] private AudioClip _noManaSfx;
     private Camera _camera;
     private ManaMananger _manaMananger;
     private bool _canShoot = true;
@@ -27,10 +30,16 @@ public class PlayerShoot : MonoBehaviour
         {
             Shoot();
         }
+        if (Input.GetKey(KeyCode.Mouse1) && _canShoot && _manaMananger.Mana <= 0)
+        {
+            _source.PlayOneShot(_noManaSfx);
+            StartCoroutine(Reload());
+        }
     }
     private void Shoot()
     {
         StartCoroutine(Reload());
+        _source.PlayOneShot(_shootSfx);
         _manaMananger.MinusMana(_manaCost);
         _animator.SetTrigger("Shoot");
         Instantiate(_bullet, transform.position, transform.rotation);

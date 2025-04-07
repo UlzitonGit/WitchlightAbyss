@@ -7,13 +7,16 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private GameObject _mana;
     [SerializeField] private GameObject _heal;
     [SerializeField] private float _dropChance = 35;
+    
     [SerializeField] private Animator _anim;
     private EnemyBehaviour _enemyBehaviour;
+    private AudioSource _source;
     private bool _dead = false;
     private RoomZone _roomZone;
     private bool _isCounted = false;
     private void Start()
     {
+        _source = GetComponent<AudioSource>();
         _enemyBehaviour = GetComponent<EnemyBehaviour>();
     }
     public virtual void GetDamage(float damage)
@@ -36,6 +39,7 @@ public class EnemyHealth : MonoBehaviour
     }
     IEnumerator Death()
     {
+        _source.Play();
         _roomZone._enemyCount -= 1;
         _dead = true;
         _enemyBehaviour.IsActive = false;
