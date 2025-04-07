@@ -3,9 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class MenuMananger : MonoBehaviour
 {
-   
-    public void Play(int scene)
+    private int _currentLevel;
+    private void Start()
     {
+        _currentLevel = PlayerPrefs.GetInt("Level");
+    }
+    public void PlayNew(int scene)
+    {
+        _currentLevel = scene;
+        PlayerPrefs.SetInt("Level", _currentLevel);
         SceneManager.LoadScene(scene);
+    }
+    public void LoadGame()
+    {
+        SceneManager.LoadScene(_currentLevel);
     }
 }
