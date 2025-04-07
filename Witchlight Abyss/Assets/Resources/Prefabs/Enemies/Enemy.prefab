@@ -271,6 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b34fa05a71966f44981f2a8c8fedf79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _anim: {fileID: 233714474194335022}
   _rageDistance: 10
   _agent: {fileID: 4136193870870937435}
   _attackDistance: 1.5
@@ -278,7 +279,6 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1469457968114636431}
   IsActive: 0
   _damage: 10
-  _anim: {fileID: 233714474194335022}
 --- !u!114 &141334871986491864
 MonoBehaviour:
   m_ObjectHideFlags: 0
