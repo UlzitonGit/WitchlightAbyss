@@ -8,6 +8,7 @@ public class TotemRecovery : MonoBehaviour
     private ManaMananger playerMn;
     void Start()
     {
+        _source = GetComponent<AudioSource>();
         playerHp = GameObject.FindWithTag("Player").GetComponent<PlayerHealth>();
         playerMn = GameObject.FindWithTag("Player").transform.Find("GunMain").GetComponent<ManaMananger>();
     }
