@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2361629668211376208}
   - component: {fileID: 3888420390381200802}
   - component: {fileID: 5412760989845985107}
+  - component: {fileID: 4967215134528875173}
   m_Layer: 0
   m_Name: BrokenBarrel
   m_TagString: Untagged
@@ -139,6 +140,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 218435e3f28ae944692d5fa0620be9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4967215134528875173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4925686389298540555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 2
+  m_ComponentVersion: 5
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000e38647a9
+  m_ShapePath:
+  - {x: -0.32190317, y: -0.284717, z: 0}
+  - {x: -0.20448044, y: -0.04603498, z: 0}
+  - {x: 0.1888212, y: -0.05386385, z: 0}
+  - {x: 0.3042857, y: -0.2945025, z: 0}
+  m_ShapePathHash: -1335914005
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 0}
+  m_ShadowShape2DProvider:
+    rid: -2
+  m_ShadowCastingSource: 1
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: -0.008808732, y: -0.17026874, z: 0}
+      m_Extent: {x: 0.31309444, y: 0.12423376, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0.06
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0.06
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0.06
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 1
+  m_PreviousShadowShape2DSource: {fileID: 2361629668211376208}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &9024873997494838012
 GameObject:
   m_ObjectHideFlags: 0

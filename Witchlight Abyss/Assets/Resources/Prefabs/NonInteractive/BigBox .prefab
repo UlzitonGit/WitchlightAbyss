@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1514340263415939175}
   - component: {fileID: 4435360623603078802}
   - component: {fileID: 818110963543961516}
+  - component: {fileID: 4643215667412058645}
   m_Layer: 0
   m_Name: 'BigBox '
   m_TagString: Untagged
@@ -148,6 +149,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 218435e3f28ae944692d5fa0620be9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4643215667412058645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6188869860078217333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_Priority: 2
+  m_ComponentVersion: 5
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_AlphaCutoff: 0.1
+  m_ApplyToSortingLayers: 00000000e38647a9
+  m_ShapePath:
+  - {x: -0.47930145, y: -0.49792957, z: 0}
+  - {x: -0.48136902, y: -0.07555866, z: 0}
+  - {x: 0.4896469, y: -0.07555866, z: 0}
+  - {x: 0.48757935, y: -0.49585962, z: 0}
+  m_ShapePathHash: -697625131
+  m_InstanceId: 0
+  m_ShadowShape2DComponent: {fileID: 0}
+  m_ShadowShape2DProvider:
+    rid: -2
+  m_ShadowCastingSource: 1
+  m_ShadowMesh:
+    m_Mesh: {fileID: 0}
+    m_LocalBounds:
+      m_Center: {x: 0.0041389465, y: -0.28674412, z: 0}
+      m_Extent: {x: 0.48550797, y: 0.21118546, z: 0}
+    m_EdgeProcessing: 1
+    m_TrimEdge: 0.05
+    m_FlipX: 0
+    m_FlipY: 0
+    m_InitialTrim: 0.05
+  m_CastingOption: 1
+  m_PreviousTrimEdge: 0.05
+  m_PreviousEdgeProcessing: 1
+  m_PreviousShadowCastingSource: 1
+  m_PreviousShadowShape2DSource: {fileID: 1514340263415939175}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &9035926073940336502
 GameObject:
   m_ObjectHideFlags: 0

@@ -276,6 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a66656ce75fe24cae8bd110c91004d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTutorial: 1
   textNps:
   - {fileID: 8082570714064106619}
   - {fileID: 2469769962803530269}

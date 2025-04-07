@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DialogueController : MonoBehaviour
 {
+    [SerializeField] private bool isTutorial;
     [SerializeField] private GameObject[] textNps;
     private bool isPlayerInTrigger = false;
     private int count = 1;
@@ -42,7 +43,7 @@ public class DialogueController : MonoBehaviour
         {
             isPlayerInTrigger = true;
         }
-        textNps[0].SetActive(true);
+        textNps[0].SetActive(isTutorial);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
