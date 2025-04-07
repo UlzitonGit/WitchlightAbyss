@@ -15,8 +15,20 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/FirstLevel.unity
     guid: ca94d6659c7cb73448fa3dae881a949c
   - enabled: 1
+    path: Assets/Resources/Scenes/ChillZone.unity
+    guid: 11b334fa35413aa48959696d93f38189
+  - enabled: 1
     path: Assets/Resources/Scenes/SecondLevel.unity
     guid: a9e60d8d25098584482e60fc55c96b10
+  - enabled: 1
+    path: Assets/Resources/Scenes/ChillZone Lvl1.unity
+    guid: cf82ddc203b1ca847bfffbbcf5ab3d98
+  - enabled: 1
+    path: Assets/Resources/Scenes/ThirdLevel.unity
+    guid: 669fb3de196b9604581fb8430193a19b
+  - enabled: 1
+    path: Assets/Resources/Scenes/ChillZone Lvl2.unity
+    guid: b1bb425073641e94190debde4abee765
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
