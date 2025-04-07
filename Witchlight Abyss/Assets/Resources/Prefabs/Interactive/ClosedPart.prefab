@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7958165119914422717}
   - component: {fileID: 7686085607696897807}
   - component: {fileID: 6790236375183846562}
-  - component: {fileID: 6924277740696582359}
+  - component: {fileID: 7556235641450472679}
   m_Layer: 0
   m_Name: ClosedPart
   m_TagString: FightZone
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyCount: 0
---- !u!50 &6924277740696582359
+--- !u!50 &7556235641450472679
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
