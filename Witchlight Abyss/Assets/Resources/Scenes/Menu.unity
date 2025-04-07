@@ -1297,7 +1297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &444650205
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2237,7 +2237,19 @@ PrefabInstance:
     - target: {fileID: 418236243022107301, guid: 7f838d75d6ba0c24c929666a3c1fd860, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 8fd9b2d1319f9f3419f8fbf2a578316d, type: 3}
+      objectReference: {fileID: 5935954154359093688, guid: 3db8a77935519464faffceba0735f91b, type: 3}
+    - target: {fileID: 418236243022107301, guid: 7f838d75d6ba0c24c929666a3c1fd860, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 418236243022107301, guid: 7f838d75d6ba0c24c929666a3c1fd860, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 418236243022107301, guid: 7f838d75d6ba0c24c929666a3c1fd860, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1098296330278110961, guid: 7f838d75d6ba0c24c929666a3c1fd860, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.98039216

@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerMeleAttack _playerMele;
     private PlayerShoot _playerShoot;
     private bool _canDash = true;
-    private bool _canWalk = true;
+    public bool _canWalk = true;
     private float _dashTime = 0.25f;
     private float _dashReload = 1;
     private void Start()
@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = move * _moveSpeed;
 
         _animator.SetBool("Move", move.magnitude > 0);
-        if(Input.GetKey(KeyCode.E) && _canDash)
+        if(Input.GetKey(KeyCode.LeftShift) && _canDash)
         {
             Dash(new Vector2(horizontal, vertical));
         }
