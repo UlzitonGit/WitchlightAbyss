@@ -176,6 +176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barier (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9095701462506663120, guid: 916ddea421360844886afd097d8b5795, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -237,6 +241,10 @@ PrefabInstance:
     - target: {fileID: 3276085407682685263, guid: 916ddea421360844886afd097d8b5795, type: 3}
       propertyPath: m_Name
       value: Barier (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095701462506663120, guid: 916ddea421360844886afd097d8b5795, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -300,6 +308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barier (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9095701462506663120, guid: 916ddea421360844886afd097d8b5795, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -361,6 +373,10 @@ PrefabInstance:
     - target: {fileID: 3276085407682685263, guid: 916ddea421360844886afd097d8b5795, type: 3}
       propertyPath: m_Name
       value: Barier
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095701462506663120, guid: 916ddea421360844886afd097d8b5795, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
