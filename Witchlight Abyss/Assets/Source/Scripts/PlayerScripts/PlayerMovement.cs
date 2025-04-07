@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject _flipPart;
     [SerializeField] private Animator _animator;
     [SerializeField] private float _dashPower;
+
     private PlayerMeleAttack _playerMele;
     private PlayerShoot _playerShoot;
     private bool _canDash = true;

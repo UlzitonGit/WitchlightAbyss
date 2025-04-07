@@ -4,6 +4,7 @@ public class TotemRecovery : MonoBehaviour
 {
     [SerializeField] private int _levelSave;
     private PlayerHealth playerHp;
+    private AudioSource _source;
     private ManaMananger playerMn;
     void Start()
     {
@@ -15,6 +16,7 @@ public class TotemRecovery : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            _source.Play();
             int prevLevel = PlayerPrefs.GetInt("Level");
             if(prevLevel < _levelSave)
             {
