@@ -7,6 +7,11 @@ public class MenuMananger : MonoBehaviour
     private void Start()
     {
         _currentLevel = PlayerPrefs.GetInt("Level");
+        if( _currentLevel == 0 )
+        {
+            _currentLevel = 1;
+            PlayerPrefs.SetInt("Level", _currentLevel);
+        }
     }
     public void PlayNew(int scene)
     {
