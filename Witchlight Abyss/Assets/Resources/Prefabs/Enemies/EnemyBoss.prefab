@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31915cfd8c6e7dc498ba23299d29679a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 400
+  _health: 800
   _mana: {fileID: 965470985707234394, guid: 6c8829e21aead6b42852bfb247ab7ceb, type: 3}
   _heal: {fileID: 2436748472610905684, guid: 9966803f265833b4696a2089aec65242, type: 3}
   _dropChance: 100
