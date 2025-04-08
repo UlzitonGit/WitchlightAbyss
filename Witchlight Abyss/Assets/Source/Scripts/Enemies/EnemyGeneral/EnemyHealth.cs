@@ -44,6 +44,7 @@ public class EnemyHealth : MonoBehaviour
         _dead = true;
         _enemyBehaviour.IsActive = false;
         _anim.SetBool("Death", true);
+        Destroy(gameObject.GetComponent<CapsuleCollider2D>());
         yield return new WaitForSeconds(4);
         Destroy(gameObject);
     }

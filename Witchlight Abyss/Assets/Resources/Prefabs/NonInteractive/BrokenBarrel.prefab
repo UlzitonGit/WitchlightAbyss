@@ -181,7 +181,7 @@ MonoBehaviour:
     m_TrimEdge: 0.06
     m_FlipX: 0
     m_FlipY: 0
-    m_InitialTrim: 0.06
+    m_InitialTrim: 0
   m_CastingOption: 1
   m_PreviousTrimEdge: 0.06
   m_PreviousEdgeProcessing: 1
@@ -258,6 +258,6 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.04070983, y: -0.1574147}
-  m_Size: {x: 0.6738343, y: 0.3187937}
+  m_Offset: {x: 0.04070983, y: -0.17648007}
+  m_Size: {x: 0.67383444, y: 0.3569253}
   m_Direction: 1
