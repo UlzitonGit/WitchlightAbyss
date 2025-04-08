@@ -19,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
     {
         _hp -= damage;
         _hpBar.fillAmount = _hp / _maxHealth;
-        if (_hp < 0)
+        if (_hp <= 0)
         {
             StartCoroutine(Death());
         }

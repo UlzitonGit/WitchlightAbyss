@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3156431089125104397, guid: 468459f98a4b0a540878b95cd803eaea, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0033206
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156431089125104397, guid: 468459f98a4b0a540878b95cd803eaea, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.043594226
+      objectReference: {fileID: 0}
     - target: {fileID: 4375696734392323353, guid: 468459f98a4b0a540878b95cd803eaea, type: 3}
       propertyPath: m_Name
       value: CleanColumn Variant

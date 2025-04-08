@@ -5,11 +5,13 @@ public class RoomZone : MonoBehaviour
     private ClosingWall[] _walls;
     
     public int _enemyCount;
-    private bool _canBeOpened =false;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool _canBeOpened = false;
+    public bool _open;
+    private LevelZone _levelZone;
     void Start()
     {
-        
+        _open = false;
+        _levelZone = GetComponentInParent<LevelZone>();
         _walls = GetComponentsInChildren<ClosingWall>();
     }
     private void Update()
@@ -19,6 +21,8 @@ public class RoomZone : MonoBehaviour
             for (int i = 0; i < _walls.Length; i++)
             {
                 _walls[i].wall.SetActive(false);
+                _open = true;
+                _levelZone.CheckClearLevel();
             }
         }
     }

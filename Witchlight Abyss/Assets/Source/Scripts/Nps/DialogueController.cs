@@ -6,8 +6,10 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private GameObject[] textNps;
     private bool isPlayerInTrigger = false;
     private int count = 1;
+    private InventoryMananger _inventoryMananger;
     void Start()
     {
+        _inventoryMananger = FindAnyObjectByType<InventoryMananger>();
         foreach (var t in textNps)
         { 
             t.SetActive(false); 
@@ -42,6 +44,7 @@ public class DialogueController : MonoBehaviour
         if (collision.tag == "Player")
         {
             isPlayerInTrigger = true;
+            _inventoryMananger.InInteractiveZone = true;
         }
         textNps[0].SetActive(isTutorial);
     }
@@ -49,6 +52,7 @@ public class DialogueController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         isPlayerInTrigger = false;
+        _inventoryMananger.InInteractiveZone = false;
         count = 1;
         foreach (var t in textNps)
         { 

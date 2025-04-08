@@ -25,14 +25,12 @@ public class ShowBabl : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            _inventoryMananger.InInteractiveZone = true;
             isPlayerInTrigger = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        _inventoryMananger.InInteractiveZone = false;
         isPlayerInTrigger = false;
         bablCanvas.SetActive(false);
     }
