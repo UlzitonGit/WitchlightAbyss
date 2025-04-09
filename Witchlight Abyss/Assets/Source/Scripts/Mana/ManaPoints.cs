@@ -8,7 +8,7 @@ public class ManaPoints : MonoBehaviour
     private float _flySpeed;
     private void Start()
     {
-        _flySpeed = Random.Range(2f, 3.5f);
+        _flySpeed = Random.Range(2.5f, 4f);
         _manaMananger = FindAnyObjectByType<ManaMananger>();
     }
     void Update()

@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyCount: 0
+  _open: 0
 --- !u!50 &653314630116233898
 Rigidbody2D:
   serializedVersion: 5
